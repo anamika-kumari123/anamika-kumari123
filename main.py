@@ -1,4 +1,5 @@
 from ustfile import validating_password
-input1 = input("enter password: ")
-obj = validating_password(input1)
-print(obj)
+from read import read_file
+for i in read_file():
+    out = validating_password(i)
+    print(out)
